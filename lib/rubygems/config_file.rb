@@ -183,7 +183,7 @@ class Gem::ConfigFile
     @bulk_threshold = DEFAULT_BULK_THRESHOLD
     @verbose = DEFAULT_VERBOSITY
     @update_sources = DEFAULT_UPDATE_SOURCES
-    @cert_expiration_length_days = CERT_EXPIRATION_LENGTH_DAYS
+    @cert_expiration_length_days = DEFAULT_CERT_EXPIRATION_LENGTH_DAYS
 
     operating_system_config = Marshal.load Marshal.dump(OPERATING_SYSTEM_DEFAULTS)
     platform_config = Marshal.load Marshal.dump(PLATFORM_DEFAULTS)
